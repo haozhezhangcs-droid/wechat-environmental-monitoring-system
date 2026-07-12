@@ -1,0 +1,133 @@
+/**index.wxss**/
+/* 自定义按钮样式 */
+.button-custom-1 {
+  background-color: #1aad19; /* 绿色背景 */
+  color: white; /* 文字颜色 */
+  border-radius: 8px; /* 圆角 */
+  padding: 10px 20px;
+}
+
+.button-custom-2 {
+  background-color: #ff4d4f; /* 红色背景 */
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.one {
+  background-color: #3f7074; /* 按钮背景色 */
+  color: rgb(167, 26, 26); /* 按钮文字颜色 */
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+}
+.one-active {
+  background-color: #ff4d4f; /* 切换后的背景色 */
+}
+.warnning-text {
+  font-size: 24px; /* 设置文本大小 */
+  font-weight: bold; /* 加粗 */
+  text-align: center; /* 居中对齐 */
+  padding: 10px;
+  border-radius: 5px; /* 可选，增加圆角 */
+}
+/* 温度过低 */
+.warnning-text-high {
+  color: rgb(231, 19, 19); /* 蓝色 */
+  font-size: 22px; /* 更大的字体 */
+  font-weight: bold; /* 加粗 */
+}
+.warnning-text-low {
+  color: rgb(255, 0, 0); /* 温度过低时使用红色 */
+}
+
+.warnning-text-critical {
+  color: orange; /* 达到临界点时使用橙色 */
+}
+page {
+  background-color: #33979e;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50rpx 10px;
+  box-sizing: border-box;
+} 
+.header {
+  width: 100%;
+  text-align: center; /* 居中对齐 */
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.title {
+  font-size: 32px; /* 更大的字体 */
+  font-weight: bold; /* 加粗 */
+  color: #d9534f; /* 鲜艳的颜色 */
+  background-color: #f8f9fa; /* 添加背景色，突出显示 */
+  padding: 20rpx; /* 添加内边距 */
+  border-radius: 8rpx; /* 圆角效果 */
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+  margin-bottom: 10px;
+}
+.wenben_xiugai {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15rpx;
+  border: 1px solid silver;
+  margin: 15rpx 0;
+  background-color: #f7f7f7;
+}
+
+.wenben_xiugai view {
+  font-size: 36rpx; 
+  padding: 5rpx 20rpx;
+}
+
+.wendu_gai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rpx;
+  margin: 10rpx 0;
+}
+
+.wendu_gai button {
+  font-size: 30rpx;
+  padding: 10rpx 20rpx;
+}
+
+/* 警告文本样式 */
+.baojing {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+/* 辅助元素的样式 */
+.gegege {
+  width: 100%;
+  height: 20rpx;
+  background-color: #ddd;
+  margin-top: 15rpx;
+}
+.wenben_btn_group {
+  display: flex;
+  flex-wrap: wrap; /* 允许换行 */
+  justify-content: space-between; /* 设置按钮之间的间距 */
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+
+.wenben_btn_group button {
+  width: 48%; /* 每个按钮宽度占父容器的 48%，留出间距 */
+  margin-bottom: 20rpx; /* 两行之间的间距 */
+}

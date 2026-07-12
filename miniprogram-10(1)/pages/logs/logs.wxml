@@ -1,0 +1,11 @@
+<!--logs.wxml-->
+<!-- logs.wxml -->
+<view class="container">
+  <view class="profile-info">
+    <image class="profile-pic" src="/images/bc4d991477a8b2e07cf8886ad3e2c90.jpg"></image>
+    <view><text class="name-text">姓名：张昊哲</text></view>
+    <view><text class="class-text">班级：物联网212</text></view>
+    <view><text class="id-text">学号：210875224</text></view>
+  </view>
+</view>
+

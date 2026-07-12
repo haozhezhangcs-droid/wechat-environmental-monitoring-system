@@ -1,0 +1,38 @@
+<!--pages/datas/datas.wxml-->
+<!--index.wxml-->
+<view class="container">
+  <!-- 页面标题 -->
+  <view class="header">
+    <text class="title">凯雷德ESCALADE</text>
+  </view>
+
+  <!-- 轮播图 -->
+  <swiper class="swiper" indicator-dots="true" indicator-color="rgba(255, 255, 255, 0.6)" indicator-active-color="#ff4d4f" autoplay="true" interval="3000" circular="true">
+    <swiper-item>
+      <image src="/images/848ad1d70c5da716f78ef5984a764d1.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/82c838f66dc54b8133123146fa6f4e1.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/e7bb9eb4a66411cab7d474d64c2d0ed.jpg" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+   <!-- 文本项 -->
+   <view class="content">
+    <view class="item">霸气</view>
+    <view class="item">蛮横</view>
+    <view class="item">强硬</view>
+  </view>
+<!-- 描述文字 -->
+<view class="description">
+    <text class="description-text">
+      据了解，凯雷德搭载的是6.2L V8发动机，最大功率是 313千瓦，峰值扭矩是623牛·米，并配备10速自动变速箱还带四驱。从参数来看，凯雷德这车的动力表现应该不错，做起码它比宝马X7(3.0T车型)的参数更好看。
+    </text>
+  </view>
+ 
+
+  <!-- 按钮 -->
+  <button class="action-button" bindtap="onButtonClick">click me</button>
+</view>
+

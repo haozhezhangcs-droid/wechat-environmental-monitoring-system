@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/datas/datas",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list":
+    [
+      {
+        "pagePath":"pages/logs/logs",
+        "text":"首页",
+        "iconPath": "/images/7b308e8621aebf70fd2e2edf9679ede.png",
+        "selectedPath": "/images/7d13d544649b791fd9043bf509d2216.png"
+      },
+      {
+        "pagePath":"pages/datas/datas",
+        "text":"相关资料",
+        "iconPath": "/images/7b308e8621aebf70fd2e2edf9679ede.png",
+        "selectedPath": "/images/7d13d544649b791fd9043bf509d2216.png"
+      },
+      {
+        "pagePath":"pages/index/index",
+        "text":"数据页",
+        "iconPath": "/images/2ac2ffe275220ed4adc9e15f06159c7.png",  
+        "selectedPath": "/images/6a5bf7b690b5c739d53e445ffce8eb4.png"
+      }
+      
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

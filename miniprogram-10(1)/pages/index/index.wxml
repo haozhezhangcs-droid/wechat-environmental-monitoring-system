@@ -1,0 +1,64 @@
+<!-- index.wxml -->
+<view class="container">
+
+  <!-- 这里是标题和内容的部分 -->
+  <view class="header">
+    <text class="title">温度监测系统</text>
+  </view>
+
+  <view class="wenben_i">
+  <rich-text nodes="<h2 style='color:black;'>当前温度 : 23℃ :"></rich-text>
+  <button class="one" bindtap="toggleTemperatureDisplay">报警值：{{displayValue}}</button>
+  <button class="one" bindtap="toggleTemperatureDisplay">{{isTemperature ? '切换到报警值' : '切换到温度'}}</button>
+</view> 
+
+<!-- 使用动态类来显示警告信息 -->
+<view class="warnning-text {{warnning_str === '温度过低' ? 'warnning-text-low' : warnning_str === '达到临界点' ? 'warnning-text-critical' : warnning_str === '温度过高' ? 'warnning-text-high' : 'warnning-text-normal'}}">
+    {{warnning_str}}
+</view>
+
+
+
+  <view class="wenben_xiugai">
+  <rich-text nodes="<h3 style='color:red;'>温度上限 :</h3>"></rich-text>
+  <view style="color:red;">{{wendu_shang}}℃</view>
+  <rich-text nodes="<h3 style='color:blue;'>温度下限 : </h3>"></rich-text>
+  <view style="color:blue;">{{wendu_xia}}℃</view>
+</view>
+
+<view class="wenben_btn_group">
+    <button type="primary" size="mini" bind:tap="wenduadd1">温度上限+</button>
+    <button type="primary" size="mini" bind:tap="wenduadd2">温度上限-</button>
+    <button type="primary" size="mini" bind:tap="wendujian1">温度下限+</button>
+    <button type="primary" size="mini" bind:tap="wendujian2">温度下限-</button>
+  </view>
+
+<view class="baojing">{{text_jing}}</view>
+<view class="wenben_item">
+  <rich-text nodes="<h2 style='color:black;'>当前湿度 30% :</h2>"></rich-text>
+</view>
+<view class="wenben_xiugai">
+  <rich-text nodes="<h3 style='color:red;'>湿度上限 : 50</h3>"></rich-text>
+  <view style="color:red;">{{shidu_shang}}%</view>
+  <rich-text nodes="<h3 style='color:blue;'>湿度下限 : 10</h3>"></rich-text>
+  <view style="color:blue;">{{shidu_xia}}%</view>
+</view>
+
+<view class="baojing">{{shidu_jing}}</view>
+<view class="wenben_item">
+  <rich-text nodes="<h2 style='color:black;'>当前气体浓度 :30obs/m:</h2>"></rich-text>
+</view>
+
+<view class="wenben_xiugai">
+  <rich-text nodes="<h3 style='color:red;'>浓度上限:50 </h3>"></rich-text>
+  <view style="color:red;">{{mq2_shang}}obs</view>
+  <rich-text nodes="<h3 style='color:blue;'>浓度下限:10 </h3>"></rich-text>
+  <view style="color:blue;">{{mq2_xia}}obs/m</view>
+</view>
+
+<view class="baojing">{{mq2_jing}}</view>
+<view class="warnning-text {{warnning_str === '温度过低' ? 'warnning-text-low' : warnning_str === '达到临界点' ? 'warnning-text-critical' : warnning_str === '温度过高' ? 'warnning-text-high' : 'warnning-text-normal'}}">
+    {{warnning_str}}
+</view>
+
+</view> <!-- 确保这里关闭最外层的 <view> 标签 -->

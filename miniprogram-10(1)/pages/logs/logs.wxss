@@ -1,0 +1,49 @@
+/* logs.wxss */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  background-color: #d1c21d; /* 修改背景颜色 */
+}
+.container view
+{
+  font-size: 36rpx; 
+  padding: 5rpx 20rpx;
+}
+.profile-info {
+  color: #333333; /* 字体颜色 */
+  font-size: 30px; /* 字体大小 */
+  font-weight: bold; /* 字体加粗 */
+  text-align: center; /* 文字居中 */
+  margin: 5px 0; /* 每行之间的间距 */
+  align-items: center;
+}
+.name-text {
+  color: #1aad19; /* 绿色 */
+}
+
+.class-text {
+  color: #007acc; /* 蓝色 */
+}
+
+.id-text {
+  color: #e6196e; /* 红色 */
+}
+.profile-info text {
+  display: block; /* 强制每个 text 独占一行 */
+  margin-bottom: 10px; /* 增加行间距 */
+}
+
+.profile-pic {
+  width: 380px; /* 调整为合适的宽度 */
+  height: 400px; /* 调整为合适的高度 */
+  border-left-style: 100%; /* 可选：让图片变成圆形 */
+  margin-bottom: 1px;
+  top:0;
+  
+  margin-top: 0; /* 确保图片紧贴顶部 */
+}
